@@ -226,3 +226,10 @@ outliers.head(10)
 
 
 corr_mat = df[['Schnitt','Quote']].corr()
+
+
+test_linspace = np.linspace(20,100,100)
+
+g = lambda x: 1-(x-min(x))/max(x-min(x))
+
+color_linspace = g(df_color.Schnitt)
